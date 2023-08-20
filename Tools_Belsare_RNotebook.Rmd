@@ -1,0 +1,96 @@
+---
+title: "Tools7970_Belsare"
+output: html_notebook
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+# wrangling packages
+library (here)#
+library (tibble)#
+library (tidyverse)#
+library (dplyr)#
+library (tidyr)#
+#library (kableExtra)#
+#library (data.table)#
+#library (gridExtra)#
+#library (patchwork)
+
+#graphing packages
+library (ggplot2)#
+library (plotly)
+#library (cowplot)#
+#library (ggpubr)#
+#library (waffle)
+
+here <- here::here()
+```
+
+
+![](images/tools.png)
+```{r include=FALSE}
+#data1 <- read.csv("TopicsHist.csv", header = TRUE)
+data_github <- "https://raw.githubusercontent.com/anyadoc/Tools_WILD7970/main/TopicsHist.csv"
+data1 <- read_csv(data_github)
+#head(data1)
+datas1 <- subset(data1, Section == "Responsible Science")
+p1 <- ggplot(datas1, aes(x = reorder(Topic, -Response), y=Response, fill=Section)) +
+  geom_bar(stat = "identity", position = "dodge", fill = "lightblue") +
+  theme_bw() +
+  theme(axis.title.x=element_blank()) +
+  theme(axis.text.x = element_text(angle = 55)) 
+fig1 <- ggplotly(p1)
+#fig1  
+
+datas2 <- subset(data1, Section == "Data & Data Analysis")
+p2 <- ggplot(datas2, aes(x = reorder(Topic, -Response), y=Response, fill=Section)) +
+  geom_bar(stat = "identity", position = "dodge", fill = "orange") +
+  theme_bw() +
+  theme(axis.title.x=element_blank()) +
+  theme(axis.text.x = element_text(angle = 55)) 
+fig2 <- ggplotly(p2)
+#fig2
+
+datas3 <- subset(data1, Section == "Scientific Publishing")
+p3 <- ggplot(datas3, aes(x = reorder(Topic, -Response), y=Response, fill=Section)) +
+  geom_bar(stat = "identity", position = "dodge", fill = "cyan") +
+  theme_bw() +
+  theme(axis.title.x=element_blank()) +
+  theme(axis.text.x = element_text(angle = 55)) 
+fig3 <- ggplotly(p3)
+#fig3
+
+datas4 <- subset(data1, Section == "Promoting Science")
+p4 <- ggplot(datas4, aes(x = reorder(Topic, -Response), y=Response, fill=Section)) +
+  geom_bar(stat = "identity", position = "dodge", fill = "brown") +
+  theme_bw() +
+  theme(axis.title.x=element_blank()) +
+  theme(axis.text.x = element_text(angle = 55)) 
+fig4 <- ggplotly(p4)
+#fig4
+```
+
+### Poll results
+
+#### Responsible Science
+
+```{r}
+fig1
+```
+
+#### Data & Data Analysis
+```{r}
+fig2
+```
+
+#### Scientific Publishing
+
+```{r}
+fig3
+```
+
+#### Promoting Science
+
+```{r}
+fig4
+```
+
