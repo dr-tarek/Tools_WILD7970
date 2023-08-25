@@ -12,8 +12,8 @@ library (dplyr)#
 library (tidyr)#
 #library (kableExtra)#
 #library (data.table)#
-#library (gridExtra)#
-#library (patchwork)
+library (gridExtra)#
+library (patchwork)
 
 #graphing packages
 library (ggplot2)#
@@ -37,7 +37,7 @@ p1 <- ggplot(datas1, aes(x = reorder(Topic, -Response), y=Response, fill=Section
   geom_bar(stat = "identity", position = "dodge", fill = "lightblue") +
   theme_bw() +
   theme(axis.title.x=element_blank()) +
-  theme(axis.text.x = element_text(angle = 55)) 
+  theme(text = element_text(size=8), axis.text.x = element_text(angle = 25)) 
 fig1 <- ggplotly(p1)
 #fig1  
 
@@ -46,7 +46,7 @@ p2 <- ggplot(datas2, aes(x = reorder(Topic, -Response), y=Response, fill=Section
   geom_bar(stat = "identity", position = "dodge", fill = "orange") +
   theme_bw() +
   theme(axis.title.x=element_blank()) +
-  theme(axis.text.x = element_text(angle = 55)) 
+  theme(text = element_text(size=8),axis.text.x = element_text(angle = 25)) 
 fig2 <- ggplotly(p2)
 #fig2
 
@@ -55,16 +55,17 @@ p3 <- ggplot(datas3, aes(x = reorder(Topic, -Response), y=Response, fill=Section
   geom_bar(stat = "identity", position = "dodge", fill = "cyan") +
   theme_bw() +
   theme(axis.title.x=element_blank()) +
-  theme(axis.text.x = element_text(angle = 55)) 
+  theme(text = element_text(size=8),axis.text.x = element_text(angle = 25)) 
 fig3 <- ggplotly(p3)
 #fig3
 
 datas4 <- subset(data1, Section == "Promoting Science")
 p4 <- ggplot(datas4, aes(x = reorder(Topic, -Response), y=Response, fill=Section)) +
   geom_bar(stat = "identity", position = "dodge", fill = "brown") +
+  scale_y_continuous(limits=c(0,10), breaks=seq(1,10,by=1))
   theme_bw() +
   theme(axis.title.x=element_blank()) +
-  theme(axis.text.x = element_text(angle = 55)) 
+  theme(text = element_text(size=8),axis.text.x = element_text(angle = 25)) 
 fig4 <- ggplotly(p4)
 #fig4
 ```
@@ -92,5 +93,10 @@ fig3
 
 ```{r}
 fig4
+```
+
+```{r}
+(p1 | p2) / (p3 | p4)
+
 ```
 
