@@ -1,0 +1,18 @@
+---
+title: "TA_Tools_Fall2024"
+author: "Tarek Ahmed"
+format: html
+editor: visual
+---
+
+## 
+
+**Writing prompt 1**
+
+One of the most disruptive papers in the field of poultry science, particularly related to broiler welfare and behavior, is " The effect of light intensity on the behavior, eye and leg health, and immune function of broiler chickens" by Blatchford et al. This study was instrumental in linking lighting intensity with broiler welfare indicators such as leg health, walking ability (gait score), and activity levels. It showed that low light intensity can reduce activity, which in turn affects leg strength and increases the risk of leg disorders, thus impacting overall welfare. This research shifted the industry\'s focus toward light management as a critical welfare factor, making it disruptive.
+
+In the past 5-10 years, one of the most disruptive papers is "Comparison of Two LED Light Bulbs to a Dimmable CFL and their Effects on Broiler Chicken Growth, Stress, and Fear"by Archer et al. This study introduced LED lighting as a welfare-friendly, energy-efficient alternative to traditional incandescent or fluorescent lighting systems used in poultry houses. The paper demonstrated that LED lighting could be tailored to meet the physiological and behavioral needs of broilers, significantly improving welfare indicators such as latency to lie, footpad health, and fear response, while maintaining optimal growth rates. This study shifted the industry's understanding of lighting from a simple utility for visibility and growth to a multifaceted tool that can optimize animal welfare without sacrificing productivity.
+
+Yes, the disruptive or paradigm-shifting nature of research in poultry welfare and lighting has somewhat declined in recent years. While innovative studies like those exploring the effects of LED lights continue to push the boundaries of knowledge, the field has increasingly seen incremental improvements rather than fundamental shifts. One possible reason for this is that a significant portion of the foundational knowledge in broiler welfare and lighting has already been established. Researchers are now fine-tuning aspects of previous discoveries, such as adjusting light intensity, wavelength, or duration, rather than introducing completely novel ideas. Additionally, the increased focus on practical, industry-driven solutions could be limiting more groundbreaking research.
+
+................................................................................................
