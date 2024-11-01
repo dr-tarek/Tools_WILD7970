@@ -5,6 +5,10 @@ format: html
 editor: visual
 ---
 
+```{r}
+
+```
+
 ## 
 
 **Writing prompt 1**
@@ -64,3 +68,11 @@ I would express my appreciation for Dr. Andrews' pivotal role in the project, wh
 **Writing prompt 7**
 
 An ethical journal ensures that its policies and procedures are openly accessible to the public. This includes clear guidelines on the peer-review process, authorship criteria, and the management of conflicts of interest. Ethical journals require that research data is presented honestly, with no manipulation or selective reporting, ensuring the accuracy and reliability of published findings. They also take serious measures to prevent plagiarism and conflicts of interest, and they require authors to disclose any potential biases. In fields involving human or animal subjects, ethical journals strictly enforce adherence to ethical guidelines for the treatment of participants.
+
+..............................................................................................
+
+**Writing prompt 8**
+
+People often think statistics can be twisted to show anything, but in reality, good statistical work is all about being accurate and honest with data. In my project, I chose methods that directly answer my research questions, making sure the results show real patterns instead of random trends. I also took steps to minimize bias and check assumptions, so the findings truly add to our understanding, rather than just telling a story with numbers.
+
+While some might misuse statistics, responsible research uses these tools to uncover real insights. I carefully documented each step, looked for any limitations, and selected analyses that avoid exaggerating or distorting the results. This makes my conclusions more reliable, giving a clear, honest picture of the data. When done right, statistics help simplify complex information, making them essential for drawing solid, evidence-based conclusions.
